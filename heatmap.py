@@ -24,7 +24,7 @@ def patch_pose_classes_for_gradcam():
     # Fix the Pose class
     def pose_kpts_decode_no_inplace(self, kpts: torch.Tensor) -> torch.Tensor:
         """Decode keypoints from predictions (no inplace operations)."""
-        ndim = self.kpt_shape[1]
+        ndim = self.kpt_shape[1] 
         bs = kpts.shape[0]
         if self.export:
             y = kpts.view(bs, *self.kpt_shape, -1)
