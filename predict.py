@@ -1,4 +1,4 @@
-# 评估训练好的模型
+# Evaluate the trained model
 from ultralytics import YOLO
 
 if __name__ == "__main__":
